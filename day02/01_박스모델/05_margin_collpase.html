@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_margin_collpase e </title>
+
+    
+    <!-- 외부 스타일시트 -->
+    <link rel="stylesheet" href="/day02/01_박스모델/01_margin/css/05_margin_collpase.css">
+    
+</head>
+<body>
+    <h1>margin: collpase 현상</h1>
+    <div class="container">
+        <header></header>
+        
+        <!-- 위 아래 마진이 100+100=200이 되지않고 100 만 남음 =collpase 현상 -->
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+       
+        <footer></footer>
+    </div>
+
+    <h1>margin: collpase 해결1 padding</h1>
+    <div class="container">
+        <header></header>
+        
+        <!-- 내부에 패딩을 줘서 벌림... 크기가 커짐 border 자리가 바뀌는게 단점 -->
+        <section class="solve-1"></section>
+        <section class="solve-1"></section>
+        <section class="solve-1"></section>
+        <section class="solve-1"></section>
+       
+        <footer></footer>
+    </div>
+
+
+    <h1>margin: collpase 해결2 border</h1>
+    <div class="container">
+        <header></header>
+        
+        <!-- 섹션에 있는 마진 컬렙스를 없애려면 그위에 감싸고 보더 속성을 줌
+        보더가 생기는데 투명색상 처리를 하면됨 근데 자주쓰는 방법은 아님 -->
+        <div class="solve-2"><section ></section> </div>
+        <div class="solve-2"><section ></section> </div>
+        <div class="solve-2"><section ></section> </div>
+        <div class="solve-2"><section ></section> </div>
+
+        <footer></footer>
+    </div>
+
+
+    
+</body>
+</html>
