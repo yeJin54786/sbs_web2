@@ -1,0 +1,28 @@
+/* TODO : 여기에 코드를 작성해보세요:)  */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+/* reset */
+* {margin: 0; padding: 0;}
+/* html reset */
+a {color: inherit; text-decoration: inherit;}
+li {list-style: none;}
+img {vertical-align: middle;}
+
+
+/* layout */
+.font {font-family: 'Nanum myeongjo', serif;}
+body {font-family: 'Noto Sans KR', sans-serif; font-size: 16px; color: #7e7e7e;}
+.wrap {width: 100%; margin: 0; overflow: hidden;}
+
+/* nav */
+nav {
+    position: fixed; overflow: hidden; background-color: #c59f8b;
+    top: 0; width: 100%; height: 51px; z-index: 1; 
+}
+
+nav a {float: left; display: block; color: #f2f2f2; text-align: center;
+text-decoration: none; font-style: 17px; padding: 14px 16px;
+}
+
+nav a:hover {background-color: #ddd; color: black;}

@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    background: lightgrey;
+    height: 100px;
+}
+
+#nav {
+    background: #339990;
+    color: #fff;
+    width: 200px;
+    height: 300px;
+    float: left;
+
+}
+
+#section {
+    width: 200px;
+    text-align: left;
+    padding: 10px;
+    float: left;
+}
+
+#footer {
+    background-color: rgb(233, 195, 160);
+    height: 100px;
+    clear: both;
+}
+
+#header, #nav, #section, #footer {text-align: center;}
+#header, #footer {line-height: 100px;}
+#nav, #section {line-height: 240px;}
