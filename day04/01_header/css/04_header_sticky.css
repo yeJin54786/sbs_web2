@@ -1,0 +1,29 @@
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c ;
+    color: white;
+    font-size: 30px;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+
+    background:  deeppink;
+    color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {list-style-type: none; padding: 0;}
+
+li {display: inline-block; margin-left: 16px; font-size: 18px; font-weight: bold;}
+
+section {height: 400px; width:1200px; margin: 0 auto; background-color:lightgreen ; border: 3px solid blue;}
+

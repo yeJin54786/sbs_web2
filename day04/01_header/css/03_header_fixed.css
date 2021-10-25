@@ -1,0 +1,25 @@
+body {margin: 0;}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17%;x
+}
+
+.navbar a:hover {
+background: #ddd;
+color:black
+}
+
+section {width: 1200px; height: 400px; margin: 0 auto; background-color: lightgreen; border: 3px solid #ccc;}
