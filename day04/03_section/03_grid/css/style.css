@@ -1,0 +1,21 @@
+.container {
+    width: 960px;
+    min-height: 400px;
+    margin: 0 auto;
+    border:3px dashed rgb(216, 170, 84);
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto;
+background: rgb(238, 225, 213);
+padding:10px ;
+}
+
+.itme {
+    background-color: lightgrey;
+    border: 1px solid rgb(160, 160, 160);
+    padding: 20px;
+    text-align: center;
+}
+
