@@ -1,0 +1,73 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 1400px;
+    border: 3px dashed orange;
+    box-sizing: border-box;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+}
+
+.transition1 {transition: width 2s;}
+.transition1:hover { width: 600px;}
+
+.transition2 {transition: height 2s;}
+.transition2:hover { height: 600px;}
+
+.transition3 {transition: width 1s, height 2s;}
+.transition3:hover { width: 800px; height: 400px;}
+
+.transition4 {
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+.transition4:hover {
+    width: 800px;
+}
+
+.transition5 {
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+.transition5:hover {
+    width: 800px;
+}
+
+
+.transition6 {
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+.transition6:hover {
+    width: 800px;
+}
+
+
+.transition7 {
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+.transition7:hover {
+    width: 800px;
+}
+
+
+
+.transition8 {
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.transition8:hover {
+    width: 800px;
+}
+
+
+.transition9 {
+    transition-delay: 3s;
+}
+
+.transition9:hover {width: 800px;}
