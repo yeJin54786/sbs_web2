@@ -1,0 +1,156 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Zen+Kurenaido&display=swap');
+
+
+/* reset */
+* {margin: 0; padding: 0;}
+body {margin: 0;}
+h1, h2 ,h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd {
+    margin: 0;padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; 
+    font-size: inherit;    /* inherit:부모요소의 값을 상속 받는다*/ 
+}
+
+a {color: inherit; text-decoration: inherit; }
+a img {border: none;}
+li { list-style: none;}
+address, em, i {font-style: normal;}
+
+/* layout */
+/* font */
+
+.en  {font-family: 'Zen Kurenaido', sans-serif;}
+body {font-family:'Noto Sans KR', sans-serif ; font-size: 14px;}
+.wrap {margin: 0 auto;}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: rgba(0,0,0,0.2);
+    z-index: 100;
+}
+.innerHeader {
+    width: 1600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.innerHeader .logo  {
+    float: left;
+    padding-top: 5px;
+}
+.innerHeader .logo img {
+  width: 100%;
+  height: auto;
+}
+
+
+.innerHeader .gnb {float: left; margin-left: 80px;}
+.innerHeader .gnb li {float: left; margin-right: 15px; width: 200px;}
+.innerHeader .gnb li:hover .inner {display: block;}
+.innerHeader .gnb li a {display: block; width: 100%; text-align: center; color: #fff; font-size: 16px;}
+.innerHeader .gnb li a:hover {color: #ff8342;}
+.innerHeader .gnb li .inner { display: none; height: 200px; background: rgba(100,100,100,0.4); }
+.innerHeader .gnb li .inner li { height: 50px; line-height: 50px; }
+.innerHeader .gnb li .inner li a { color: #000; }
+.innerHeader .gnb li .inner li:hover { background:#ff8342 ; }
+.innerHeader .gnb li .inner li:hover a { color: #fff; }
+
+/* section.visual */
+section.visual { width: 100vw; height: 100vh; position: relative;
+                margin: 0 auto;
+                overflow: hidden;
+                margin-bottom: 50px;
+}
+section.visual .slide { width: 300vw; font-size: 0; position: absolute; 
+                        animation-name: slide;
+                        animation-duration: 15s;
+                        animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0% {left: 0;}
+    33% {left: -100vw;}
+    66% {left: -200vw;}
+    100% {left: 0;}
+}
+section.visual .slide li { width: 100vw; display: inline-block; 
+                            font-size: 0; box-sizing: border-box;
+                            position: relative;
+}
+section.visual .slide li img  { width: 100%;}
+
+section.visual .slide li .txt {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 120px;
+    line-height: 60px;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    color: white;
+}
+
+section.visual .slide li .find {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    border-radius: 40px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+
+section.visual .slide li .find::after {
+    content: '';
+    width: 0;
+    height: 100%;
+    background: rgba(255,255,255,0.4);
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section.visual .slide li .find:hover:after {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+/* section .title */
+section .title {color: #000; text-align: center;}
+section .title h2 {font-size: 45px; margin-bottom: 5px; font-weight: normal;}
+section .title h2 span {color: #ff8342;}
+section .title p {font-style: 18px; color: #555;}
+
+/* contents */
+section.contents {background: #fff; padding: 80px 0;}
+section.contents ul {margin: 30px auto; width: 1400px; border-bottom: 1px solid #ddd; overflow: hidden;}
+section.contents ul li {float: left; width: 33.3333%;}
+section.contents ul li a { display: block; width: 100%; height: 100%;}
+section.contents ul li a p.img  {width: 100%; overflow: hidden; height: 300px;}
+section.contents ul li a p.img img {width: 100%; height: 100%; transition: all 1s; object-fit: fill;}
+section.contents ul li a:hover p.img img { transform: scale(1.2); transition: all 1s;}
+
+section.contents ul li a .text {padding: 30px;}
+section.contents ul li a .text h3 {font-size: 20px; margin-bottom: 10px;}
+section.contents ul li a .text p {font-size: 16px; margin-bottom: 10px;}
+section.contents ul li a .text p.more { text-transform: uppercase; font-weight: bold; padding-left: 10px;}
+
